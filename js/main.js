@@ -9,7 +9,7 @@ function createTbody(arrayInput){
     let tbody = "<tbody>"
     for(let i = 0; i < arrayInput.length; i++){
         tbody += "<tr><td>"+(i + 1)+"</td>";
-        tbody += "<td><a href="+nullToString(arrayInput[i].url)+" target='_blank'>"+nullToString(arrayInput[i].last_name)+"</td>";
+        tbody += "<td><a href="+nullToString(arrayInput[i].url)+" target='_blank'>"+nullToString(arrayInput[i].last_name)+" "+nullToString(arrayInput[i].first_name) "</a></td>";
         tbody += "<td>"+nullToString(arrayInput[i].first_name)+"</td>";
         tbody += "<td>"+nullToString(arrayInput[i].middle_name)+"</td>";
         tbody += "<td>"+nullToString(arrayInput[i].party)+"</td>";
@@ -31,4 +31,4 @@ else if(typeof houseData !== "undefined"){
     let arrayMembers = houseData.results[0].members;
     tableHouse.innerHTML += createTbody(arrayMembers);
 }
-
+// Holaaa dieguitooo <]:{V
