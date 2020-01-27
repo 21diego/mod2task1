@@ -1,6 +1,6 @@
 function nullToString(input){
     if(input == null){
-        return "...";
+        return "";
     }
     return input;
 }
@@ -9,9 +9,7 @@ function createTbody(arrayInput){
     let tbody = "<tbody>"
     for(let i = 0; i < arrayInput.length; i++){
         tbody += "<tr><td>"+(i + 1)+"</td>";
-        tbody += "<td><a href="+nullToString(arrayInput[i].url)+" target='_blank'>"+nullToString(arrayInput[i].last_name)+" "+nullToString(arrayInput[i].first_name) "</a></td>";
-        tbody += "<td>"+nullToString(arrayInput[i].first_name)+"</td>";
-        tbody += "<td>"+nullToString(arrayInput[i].middle_name)+"</td>";
+        tbody += "<td><a href="+nullToString(arrayInput[i].url)+" target='_blank'>"+nullToString(arrayInput[i].last_name)+" "+nullToString(arrayInput[i].first_name)+" "+nullToString(arrayInput[i].middle_name)+"</a></td>";
         tbody += "<td>"+nullToString(arrayInput[i].party)+"</td>";
         tbody += "<td>"+nullToString(arrayInput[i].state)+"</td>";
         tbody += "<td>"+nullToString(arrayInput[i].seniority)+"</td>";
