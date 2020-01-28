@@ -36,6 +36,26 @@
    <div class="container m-2">
       <h2>Senators</h2>
       <p>First convened in 1789, the composition and powers of the Senate are established in Article One of the U.S. Constitution. Each state is represented by two senators, regardless of population, who serve staggered six-year terms. The Senate has several exclusive powers not granted to the House, including consenting to treaties as a precondition to their ratification and consenting to or confirming appointments of Cabinet secretaries, federal judges, other federal executive officials, military officers, regulatory officials, ambassadors, and other federal uniformed officers, as well as trial of federal officials impeached by the House.</p>
+      <div>
+         <fieldset>
+            <label>Filter by party:</label>
+            <label>
+               <input type="checkbox" value="R" class="parties" checked>Republican
+            </label>
+            <label>
+               <input type="checkbox" value="D" class="parties" checked>Democrat
+            </label>
+            <label>
+               <input type="checkbox" value="I" class="parties" checked>Independent
+            </label>
+         </fieldset>
+         <fieldset>
+            <label>Filter by State</label>
+            <select name="state" id="states-select">
+               <option value="all">All</option>
+            </select>
+         </fieldset>
+      </div>
       <table id="senate-data" class="table table-hover table-responsive">
          <thead>
             <tr>
@@ -47,7 +67,7 @@
             </tr>
          </thead>
          <tbody>
-            
+
          </tbody>
       </table>
    </div> 
