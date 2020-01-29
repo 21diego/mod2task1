@@ -9,11 +9,15 @@
 </head>
 
 <body>
+   
+   <header>            
+      <div class="container bg-primary">
+         <a href="index.html"><img src="img/logo-congress.jfif" alt="logo" class="w-25"></a>
+      </div>
+   </header>
    <nav class="container">
       <div>
-         <div>
-            <a href="#">TGIF</a>
-         </div>
+         
          <ul >
             <li><a href="index.html">Home</a></li>
             <li >
@@ -28,10 +32,7 @@
    </nav>        
    
    
-   <header>            
-      <div>
-      </div>
-   </header>
+  
    <!--Table container-->
    <div class="container m-2">
       <h2>Senators</h2>
@@ -40,13 +41,13 @@
          <fieldset>
             <label>Filter by party:</label>
             <label>
-               <input type="checkbox" value="R" class="parties" checked>Republican
+               <input type="checkbox" value="R" class="parties" id="rep" checked>Republican
             </label>
             <label>
-               <input type="checkbox" value="D" class="parties" checked>Democrat
+               <input type="checkbox" value="D" class="parties" id="dem" checked>Democrat
             </label>
             <label>
-               <input type="checkbox" value="I" class="parties" checked>Independent
+               <input type="checkbox" value="I" class="parties" id="ind" checked>Independent
             </label>
          </fieldset>
          <fieldset>
