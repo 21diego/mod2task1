@@ -11,6 +11,8 @@ let tbody = document.querySelector("tbody");
 let members = data.results[0].members;
 let states = [];
 
+
+
 members.forEach(member => {
     let row = tbody.insertRow(-1);
     row.innerHTML = `<td><a href="${member.url} target="_blank">${member.last_name}, ${member.first_name} ${nullToString(member.middle_name)}</a></td>`
@@ -30,7 +32,9 @@ for(let i = 0; i < states.length; i++){
     select.appendChild(option);
 }
 
-console.log(states);
+console.log(document.querySelectorAll(".filtro"));
+
+
 // Holaaa dieguitooo <]:{V
 
 
